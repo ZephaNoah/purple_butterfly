@@ -13,4 +13,5 @@
     <string name="enterYourPassword">Enter your Password</string>
     <string name="forgotPassword">Forgot your Password?</string>
     <string name="signUp">SIGN UP</string>
+    <string name="login">LOG IN</string>
 </resources>

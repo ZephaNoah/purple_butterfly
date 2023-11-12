@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.purplebutterfly.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.example.purplebutterfly.LogInFragment"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logInFragment_to_landingPageFragment"
+            app:destination="@id/landingPageFragment" />
+        <action
+            android:id="@+id/action_logInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/landingPageFragment"
+        android:name="com.example.purplebutterfly.LandingPageFragment"
+        android:label="fragment_landing_page"
+        tools:layout="@layout/fragment_landing_page" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.purplebutterfly.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/occupationalTherapistFragment"
+        android:name="com.example.purplebutterfly.OccupationalTherapistFragment"
+        android:label="fragment_occupational_therapist"
+        tools:layout="@layout/fragment_occupational_therapist" />
+    <fragment
+        android:id="@+id/physiotherapistFragment"
+        android:name="com.example.purplebutterfly.PhysiotherapistFragment"
+        android:label="fragment_physiotherapist"
+        tools:layout="@layout/fragment_physiotherapist" />
+</navigation>

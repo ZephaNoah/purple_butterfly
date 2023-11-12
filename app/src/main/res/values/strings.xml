@@ -9,4 +9,8 @@
     <string name="WorkLocation">location</string>
     <string name="OccupationalTherapists">OCCUPATIONAL THERAPISTS</string>
     <string name="logIn">LOG IN PAGE</string>
+    <string name="enterYourEmail">Enter Your email</string>
+    <string name="enterYourPassword">Enter your Password</string>
+    <string name="forgotPassword">Forgot your Password?</string>
+    <string name="signUp">SIGN UP</string>
 </resources>

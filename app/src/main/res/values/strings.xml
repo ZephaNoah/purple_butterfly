@@ -8,4 +8,5 @@
     <string name="displayName">displayName</string>
     <string name="WorkLocation">location</string>
     <string name="OccupationalTherapists">OCCUPATIONAL THERAPISTS</string>
+    <string name="logIn">LOG IN PAGE</string>
 </resources>

@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_splashFragment_to_logInFragment"
             app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_landingPageFragment"
+            app:destination="@id/landingPageFragment" />
     </fragment>
     <fragment
         android:id="@+id/logInFragment"
@@ -37,6 +40,9 @@
         <action
             android:id="@+id/action_landingPageFragment_to_physiotherapistFragment"
             app:destination="@id/physiotherapistFragment" />
+        <action
+            android:id="@+id/action_landingPageFragment_to_speechtherapistFragment"
+            app:destination="@id/speechtherapistFragment" />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
@@ -61,5 +67,14 @@
         android:id="@+id/profileFragment"
         android:name="com.example.purplebutterfly.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_landingPageFragment"
+            app:destination="@id/landingPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/speechtherapistFragment"
+        android:name="com.example.purplebutterfly.SpeechtherapistFragment"
+        android:label="fragment_speechtherapist"
+        tools:layout="@layout/fragment_speechtherapist" />
 </navigation>

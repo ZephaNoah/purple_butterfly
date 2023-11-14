@@ -14,4 +14,5 @@
     <string name="forgotPassword">Forgot your Password?</string>
     <string name="signUp">SIGN UP</string>
     <string name="login">LOG IN</string>
+    <string name="personalDescription">Using a few words, type a description of your self here</string>
 </resources>

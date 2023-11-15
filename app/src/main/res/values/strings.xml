@@ -16,4 +16,12 @@
     <string name="login">LOG IN</string>
     <string name="personalDescription">Using a few words, type a description of your self here</string>
     <string name="RegistrationNumber">registrationNumber.</string>
+    <string name="signUpPage">SIGN UP HERE</string>
+    <string name="enterFirstName">Enter First Name Here</string>
+    <string name="enterLastName">Enter Last Name Here</string>
+    <string name="enterEmailHere">Enter Your Email Here</string>
+    <string name="createYourPassword">Create a Password</string>
+    <string name="confirmPassword">Confirm Your Password Here</string>
+    <string name="enterYourProfession">Please choose your profession</string>
+    <string name="typeRegistrationNumberHere">Type Your Registration Number Here (for regulated professionals only)</string>
 </resources>

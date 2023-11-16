@@ -154,6 +154,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:clickable="true"
+        android:contextClickable="true"
         android:src="@mipmap/arrow_next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

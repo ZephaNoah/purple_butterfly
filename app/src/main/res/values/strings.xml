@@ -24,4 +24,5 @@
     <string name="confirmPassword">Confirm Your Password Here</string>
     <string name="enterYourProfession">Please choose your profession</string>
     <string name="typeRegistrationNumberHere">Type Your Registration Number Here (for regulated professionals only)</string>
+    <string name="displayProfessionorTitle">displayProfession/Title</string>
 </resources>

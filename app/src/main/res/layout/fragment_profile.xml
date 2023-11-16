@@ -57,12 +57,30 @@
         app:layout_constraintStart_toStartOf="@+id/profilePicture"
         app:layout_constraintTop_toBottomOf="@+id/location" />
 
+    <TextView
+        android:id="@+id/displayProfession"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:hint="@string/displayProfessionorTitle"
+        android:padding="5dp"
+        android:textColor="#01080E"
+        android:textColorHint="#01080E"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/enterRegistrationNumber"
+        app:layout_constraintStart_toStartOf="@+id/enterRegistrationNumber"
+        app:layout_constraintTop_toBottomOf="@+id/enterRegistrationNumber" />
+
     <EditText
         android:id="@+id/personalDescription"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="10dp"
         android:ems="10"
         android:hint="@string/personalDescription"
@@ -71,15 +89,8 @@
         android:textColorHint="#01080E"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/location"
-        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/profilePicture"
-        app:layout_constraintTop_toBottomOf="@+id/enterRegistrationNumber" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="563dp" />
+        app:layout_constraintTop_toBottomOf="@+id/displayProfession" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

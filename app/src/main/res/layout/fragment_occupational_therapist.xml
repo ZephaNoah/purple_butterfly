@@ -77,6 +77,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/line"
-        tools:listitem="@layout/fragment_profile" />
+        tools:listitem="@layout/fragment_therapist_profile" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

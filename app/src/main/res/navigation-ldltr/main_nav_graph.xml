@@ -55,9 +55,9 @@
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.example.purplebutterfly.SignUpFragment"
+        android:name="com.example.purplebutterfly.TherapistSignUpFragment"
         android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up" >
+        tools:layout="@layout/fragment_therapist_sign_up" >
         <action
             android:id="@+id/action_signUpFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
@@ -74,9 +74,9 @@
         tools:layout="@layout/fragment_physiotherapist" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.purplebutterfly.ProfileFragment"
+        android:name="com.example.purplebutterfly.TherapistProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" >
+        tools:layout="@layout/fragment_therapist_profile" >
         <action
             android:id="@+id/action_profileFragment_to_landingPageFragment"
             app:destination="@id/landingPageFragment" />
@@ -97,9 +97,9 @@
     </fragment>
     <fragment
         android:id="@+id/organisationFragment"
-        android:name="com.example.purplebutterfly.OrganisationFragment"
+        android:name="com.example.purplebutterfly.OrganisationSignUpFragment"
         android:label="fragment_organisation"
-        tools:layout="@layout/fragment_organisation" />
+        tools:layout="@layout/fragment_organisation_sign_up" />
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.purplebutterfly.AboutFragment"

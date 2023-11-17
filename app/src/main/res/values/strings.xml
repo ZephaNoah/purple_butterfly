@@ -2,7 +2,7 @@
     <string name="app_name">purple butterfly</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="splashScreenLog" />
+    <string name="splashScreenLogo" />
     <string name="ProfilePicture">profilePicture</string>
     <string name="location">location of operation</string>
     <string name="displayName">displayName</string>
@@ -16,13 +16,18 @@
     <string name="login">LOG IN</string>
     <string name="personalDescription">Using a few words, type a description of your self here</string>
     <string name="RegistrationNumber">registrationNumber.</string>
-    <string name="signUpPage">SIGN UP HERE</string>
-    <string name="enterFirstName">Enter First Name Here</string>
-    <string name="enterLastName">Enter Last Name Here</string>
+    <string name="signUpPage">MEDICAL PRACTITIONERS ONLY</string>
+    <string name="enterFirstName">Enter First Name</string>
+    <string name="enterLastName">Enter Last Name</string>
     <string name="enterEmailHere">Enter Your Email Here</string>
     <string name="createYourPassword">Create a Password</string>
     <string name="confirmPassword">Confirm Your Password Here</string>
-    <string name="enterYourProfession">Please choose your profession</string>
-    <string name="typeRegistrationNumberHere">Type Your Registration Number Here (for regulated professionals only)</string>
-    <string name="displayProfessionorTitle">displayProfession/Title</string>
+    <string name="enterYourProfession">Choose your profession</string>
+    <string name="typeRegistrationNumberHere">Type Your Registration Number Here</string>
+    <string name="displayProfessionTitle">displayProfession/Title</string>
+    <string name="poweredBy">Powered by SOFT RIVER TECHNOLOGY HUB</string>
+    <string name="individualSignUp">SIGN UP as a non-medical practitioner</string>
+    <string name="organizationSignUp">SIGN UP as a Business/ Organization</string>
+    <string name="medicalPractitionerSignUp">SIGN UP as a Medical Practitioner</string>
+    <string name="previousButtonSignUpOptionsPage">PREVIOUS</string>
 </resources>

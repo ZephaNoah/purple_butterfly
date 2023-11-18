@@ -127,6 +127,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="30dp"
         android:background="#FFFFFF"
+        android:drawingCacheQuality="auto"
         android:hint="@string/enterYourProfession"
         android:padding="5dp"
         android:textColor="#01080E"
@@ -165,6 +166,7 @@
         android:layout_marginBottom="25dp"
         android:text="@string/nextMedicalPractitionerSignUpButton"
         android:textColor="#01080E"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/enterRegistrationNumber" />
@@ -178,6 +180,7 @@
         android:layout_marginBottom="25dp"
         android:text="@string/backArrow"
         android:textColor="#01080E"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/enterRegistrationNumber" />

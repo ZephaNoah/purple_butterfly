@@ -41,4 +41,6 @@
     <string name="organizationEmail">Enter Organization Email</string>
     <string name="createOrganizationPassword">Create Organization Password</string>
     <string name="confirmOrganizationPassword">Confrim Organization Password</string>
+    <string name="nextOrganizationSignUpbutton">NEXT</string>
+    <string name="backOrganizationSignUpButton">BACK</string>
 </resources>

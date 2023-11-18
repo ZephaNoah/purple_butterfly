@@ -14,161 +14,147 @@
     android:verticalScrollbarPosition="defaultPosition"
     tools:context=".OrganisationSignUpFragment">
 
-    <TextView
-        android:id="@+id/organizationsOnly"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:gravity="center"
-        android:text="@string/forOrganizationsOnly"
-        android:textColor="#01080E"
-        android:textSize="24sp"
-        android:textStyle="bold"
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/organizationMessage"
+        <TextView
+            android:id="@+id/organizationsOnly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:text="@string/forOrganizationsOnly"
+            android:textColor="#01080E"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/organizationMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="vertical"
+            android:text="@string/organizationMessage"
+            android:textColor="#0000ff"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/organizationName"
+            android:textColor="#01080E"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:inputType="number"
+            android:labelFor="@id/textView5"
+            android:text="@string/organizationRegistrationNumber"
+            android:textColor="#01080E"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/organizationLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="@string/organizationLocation"
+            android:textColor="#01080E"
+            android:textColorHint="#01080E"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/enterOrganizationEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:inputType="text|textEmailAddress|textAutoComplete"
+            android:text="@string/organizationEmail"
+            android:textColor="#01080E"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/createOrganizationPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:hint="@string/createOrganizationPassword"
+            android:inputType="text|textPassword|textAutoComplete"
+            android:textColorHint="#01080E"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/confirmOrganizationPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:hint="@string/confirmOrganizationPassword"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:textColorHint="#01080E"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/nextOrganizationSignUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:hint="@string/nextOrganizationSignUpbutton"
+            android:padding="5dp"
+            android:textColorHint="#01080E"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/backOrganizationSignUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:hint="@string/backOrganizationSignUpButton"
+            android:padding="5dp"
+            android:textColorHint="#01080E"
+            android:textSize="24sp" />
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:scrollbarStyle="outsideInset"
-        android:scrollbars="vertical"
-        android:text="@string/organizationMessage"
-        android:textColor="#0000ff"
-        android:textSize="22sp"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="@+id/organizationsOnly"
-        app:layout_constraintStart_toStartOf="@+id/organizationsOnly"
-        app:layout_constraintTop_toBottomOf="@+id/organizationsOnly" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:text="@string/organizationName"
-        android:textColor="#01080E"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/organizationMessage"
-        app:layout_constraintStart_toStartOf="@+id/organizationMessage"
-        app:layout_constraintTop_toBottomOf="@+id/organizationMessage" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:ems="10"
-        android:inputType="number"
-        android:labelFor="@id/textView5"
-        android:text="@string/organizationRegistrationNumber"
-        android:textColor="#01080E"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView5"
-        app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <TextView
-        android:id="@+id/organizationLocation"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:hint="@string/organizationLocation"
-        android:textColor="#01080E"
-        android:textColorHint="#01080E"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
-
-    <EditText
-        android:id="@+id/enterOrganizationEmailAddress"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:ems="10"
-        android:inputType="text|textEmailAddress|textAutoComplete"
-        android:text="@string/organizationEmail"
-        android:textColor="#01080E"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/organizationLocation"
-        app:layout_constraintTop_toBottomOf="@+id/organizationLocation" />
-
-    <EditText
-        android:id="@+id/createOrganizationPassword"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:ems="10"
-        android:hint="@string/createOrganizationPassword"
-        android:inputType="text|textPassword|textAutoComplete"
-        android:textColorHint="#01080E"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/enterOrganizationEmailAddress"
-        app:layout_constraintStart_toStartOf="@+id/enterOrganizationEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/enterOrganizationEmailAddress" />
-
-    <EditText
-        android:id="@+id/confirmOrganizationPassword"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:ems="10"
-        android:hint="@string/confirmOrganizationPassword"
-        android:inputType="textPassword"
-        android:padding="5dp"
-        android:textColorHint="#01080E"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/createOrganizationPassword"
-        app:layout_constraintStart_toStartOf="@+id/createOrganizationPassword"
-        app:layout_constraintTop_toBottomOf="@+id/createOrganizationPassword" />
-
-    <Button
-        android:id="@+id/nextOrganizationSignUpButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
-        android:hint="@string/nextOrganizationSignUpbutton"
-        android:padding="5dp"
-        android:textColorHint="#01080E"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/confirmOrganizationPassword"
-        app:layout_constraintTop_toBottomOf="@+id/confirmOrganizationPassword" />
-
-    <Button
-        android:id="@+id/backOrganizationSignUpButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="30dp"
-        android:hint="@string/backOrganizationSignUpButton"
-        android:padding="5dp"
-        android:textColorHint="#01080E"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/confirmOrganizationPassword"
-        app:layout_constraintTop_toBottomOf="@+id/confirmOrganizationPassword" />
 </androidx.constraintlayout.widget.ConstraintLayout>

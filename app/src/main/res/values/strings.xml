@@ -32,4 +32,13 @@
     <string name="previousButtonSignUpOptionsPage">BACK</string>
     <string name="backArrow">BACK</string>
     <string name="nextMedicalPractitionerSignUpButton">NEXT</string>
+    <string name="nonMedicalPractitionerSignUpPage" />
+    <string name="forOrganizationsOnly">FOR ORGANIZATIONS ONLY</string>
+    <string name="organizationMessage">Organizations/ Businesses will be required to register official business name and business ID and then pay 20,000/= (Uganda Shillings) per month. Each month starts on 1st and ends on last day of that month\n</string>
+    <string name="organizationName">Enter Organization Name</string>
+    <string name="organizationRegistrationNumber">Enter Organization Registration Number</string>
+    <string name="organizationLocation">Enter Organization Location\n(City, Country) format</string>
+    <string name="organizationEmail">Enter Organization Email</string>
+    <string name="createOrganizationPassword">Create Organization Password</string>
+    <string name="confirmOrganizationPassword">Confrim Organization Password</string>
 </resources>

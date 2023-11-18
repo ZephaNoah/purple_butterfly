@@ -50,6 +50,9 @@
         <action
             android:id="@+id/action_signUpOptionsFragment_to_organisationSignUpFragment"
             app:destination="@id/organisationSignUpFragment" />
+        <action
+            android:id="@+id/action_signUpOptionsFragment_to_nonMedicalPractitionerSignUpFragment"
+            app:destination="@id/nonMedicalPractitionerSignUpFragment" />
     </fragment>
     <fragment
         android:id="@+id/organisationSignUpFragment"
@@ -61,4 +64,9 @@
         android:name="com.example.purplebutterfly.MedicalPractitionerSignUpFragment"
         android:label="fragment_therapist_sign_up"
         tools:layout="@layout/fragment_medical_practitioner_sign_up" />
+    <fragment
+        android:id="@+id/nonMedicalPractitionerSignUpFragment"
+        android:name="com.example.purplebutterfly.NonMedicalPractitionerSignUpFragment"
+        android:label="fragment_non_medical_practitioner_sign_up"
+        tools:layout="@layout/fragment_non_medical_practitioner_sign_up" />
 </navigation>

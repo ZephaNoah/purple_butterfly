@@ -122,7 +122,7 @@
     <TextView
         android:id="@+id/profession"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="80dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="30dp"
@@ -156,11 +156,30 @@
         app:layout_constraintStart_toStartOf="@+id/profession"
         app:layout_constraintTop_toBottomOf="@+id/profession" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/signUpGrideline"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="711dp" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/nextMedicalPractitionerSignUpButton"
+        android:textColor="#01080E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterRegistrationNumber" />
+
+    <Button
+        android:id="@+id/backMedicalPractitionerSignUpButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/backArrow"
+        android:textColor="#01080E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterRegistrationNumber" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

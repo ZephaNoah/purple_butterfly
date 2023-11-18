@@ -29,5 +29,7 @@
     <string name="individualSignUp">SIGN UP as a non-medical practitioner</string>
     <string name="organizationSignUp">SIGN UP as a Business/ Organization</string>
     <string name="medicalPractitionerSignUp">SIGN UP as a Medical Practitioner</string>
-    <string name="previousButtonSignUpOptionsPage">PREVIOUS</string>
+    <string name="previousButtonSignUpOptionsPage">BACK</string>
+    <string name="backArrow">BACK</string>
+    <string name="nextMedicalPractitionerSignUpButton">NEXT</string>
 </resources>

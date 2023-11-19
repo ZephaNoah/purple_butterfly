@@ -84,11 +84,30 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/createOrganizationPasswordSignUp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
                 android:ems="10"
-                android:inputType="textPassword" />
+                android:hint="@string/createOrganizationPassword"
+                android:inputType="textPassword"
+                android:textColorHint="#01080E"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/confirmOrganizationPasswordSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:ems="10"
+                android:hint="@string/confirmOrganizationPassword"
+                android:inputType="textPassword"
+                android:textColorHint="#01080E"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/organizationLocation"

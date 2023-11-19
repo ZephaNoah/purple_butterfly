@@ -48,20 +48,11 @@
             android:id="@+id/action_signUpOptionsFragment_to_therapistSignUpFragment"
             app:destination="@id/therapistSignUpFragment" />
         <action
-            android:id="@+id/action_signUpOptionsFragment_to_organisationSignUpFragment"
-            app:destination="@id/organisationSignUpFragment" />
-        <action
             android:id="@+id/action_signUpOptionsFragment_to_nonMedicalPractitionerSignUpFragment"
             app:destination="@id/nonMedicalPractitionerSignUpFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/organisationSignUpFragment"
-        android:name="com.example.purplebutterfly.OrganisationSignUpFragment"
-        android:label="fragment_organisation_sign_up"
-        tools:layout="@layout/fragment_organisation_sign_up" >
         <action
-            android:id="@+id/action_organisationSignUpFragment_to_organisationProfileFragment"
-            app:destination="@id/organisationProfileFragment" />
+            android:id="@+id/action_signUpOptionsFragment_to_organizationSignUpFragment"
+            app:destination="@id/organizationSignUpFragment" />
     </fragment>
     <fragment
         android:id="@+id/therapistSignUpFragment"
@@ -78,4 +69,13 @@
         android:name="com.example.purplebutterfly.OrganisationProfileFragment"
         android:label="fragment_organisation_profile"
         tools:layout="@layout/fragment_organisation_profile" />
+    <fragment
+        android:id="@+id/organizationSignUpFragment"
+        android:name="com.example.purplebutterfly.OrganizationSignUpFragment"
+        android:label="fragment_organization_sign_up"
+        tools:layout="@layout/fragment_organization_sign_up" >
+        <action
+            android:id="@+id/action_organizationSignUpFragment_to_organisationProfileFragment"
+            app:destination="@id/organisationProfileFragment" />
+    </fragment>
 </navigation>

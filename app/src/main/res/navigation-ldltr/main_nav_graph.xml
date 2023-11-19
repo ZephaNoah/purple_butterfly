@@ -58,7 +58,11 @@
         android:id="@+id/organisationSignUpFragment"
         android:name="com.example.purplebutterfly.OrganisationSignUpFragment"
         android:label="fragment_organisation_sign_up"
-        tools:layout="@layout/fragment_organisation_sign_up" />
+        tools:layout="@layout/fragment_organisation_sign_up" >
+        <action
+            android:id="@+id/action_organisationSignUpFragment_to_organisationProfileFragment"
+            app:destination="@id/organisationProfileFragment" />
+    </fragment>
     <fragment
         android:id="@+id/therapistSignUpFragment"
         android:name="com.example.purplebutterfly.MedicalPractitionerSignUpFragment"
@@ -69,4 +73,9 @@
         android:name="com.example.purplebutterfly.NonMedicalPractitionerSignUpFragment"
         android:label="fragment_non_medical_practitioner_sign_up"
         tools:layout="@layout/fragment_non_medical_practitioner_sign_up" />
+    <fragment
+        android:id="@+id/organisationProfileFragment"
+        android:name="com.example.purplebutterfly.OrganisationProfileFragment"
+        android:label="fragment_organisation_profile"
+        tools:layout="@layout/fragment_organisation_profile" />
 </navigation>

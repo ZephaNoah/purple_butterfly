@@ -54,4 +54,6 @@
     <string name="nonMedicalPractitionerSignUpNextButton">NEXT</string>
     <string name="nonMedicalPractitionerSignUpBackButton">BACK</string>
     <string name="workPlace">Enter Your workPlace</string>
+    <string name="nextButtonSpeechTherapistProfile">NEXT</string>
+    <string name="backButtonSpeechTherapistPage">BACK</string>
 </resources>

@@ -5,4 +5,5 @@
     android:id="@+id/constraintLayout7"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OrganisationProfileFragment"/>
+    android:background="#4CAF50"
+    tools:context=".OrganisationProfileFragment" />

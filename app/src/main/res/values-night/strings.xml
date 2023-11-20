@@ -56,4 +56,7 @@
     <string name="workPlace">Enter Your workPlace</string>
     <string name="nextButtonSpeechTherapistProfile">NEXT</string>
     <string name="backButtonSpeechTherapistPage">BACK</string>
+    <string name="chatTab">Chat</string>
+    <string name="SpeechTherapistGroup">Groups</string>
+    <string name="frames">Frames</string>
 </resources>

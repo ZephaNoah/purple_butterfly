@@ -53,4 +53,5 @@
     <string name="confirmPasswordNonMedicalPractitionerSignUp">Confirm Password</string>
     <string name="nonMedicalPractitionerSignUpNextButton">NEXT</string>
     <string name="nonMedicalPractitionerSignUpBackButton">BACK</string>
+    <string name="workPlace">Enter Your workPlace</string>
 </resources>

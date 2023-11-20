@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#009688"
-    tools:context=".TherapistProfileFragment">
+    tools:context=".MedicalPractitionerProfileFragment">
 
     <ImageView
         android:id="@+id/profilePicture"
@@ -28,69 +28,58 @@
         android:text="@string/displayName"
         android:textColor="#01080E"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/profilePicture"
         app:layout_constraintTop_toTopOf="@+id/profilePicture" />
 
     <TextView
-        android:id="@+id/location"
+        android:id="@+id/displayRegistrationNumber"
         android:layout_width="275dp"
         android:layout_height="50dp"
-        android:layout_margin="10dp"
-        android:text="@string/WorkLocation"
-        android:textColor="#01080E"
-        android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/profilePicture"
-        app:layout_constraintTop_toBottomOf="@+id/displayName" />
-
-    <TextView
-        android:id="@+id/enterRegistrationNumber"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:padding="5dp"
-        android:text="@string/RegistrationNumber"
-        android:textColor="#01080E"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/location"
-        app:layout_constraintStart_toStartOf="@+id/profilePicture"
-        app:layout_constraintTop_toBottomOf="@+id/location" />
-
-    <TextView
-        android:id="@+id/displayProfession"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
         android:gravity="center"
-        android:hint="@string/displayProfessionorTitle"
+        android:hint="@string/registrationNumber"
         android:padding="5dp"
         android:textColor="#01080E"
         android:textColorHint="#01080E"
         android:textSize="24sp"
         android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="@+id/enterRegistrationNumber"
-        app:layout_constraintStart_toStartOf="@+id/enterRegistrationNumber"
-        app:layout_constraintTop_toBottomOf="@+id/enterRegistrationNumber" />
+        app:layout_constraintEnd_toEndOf="@+id/displayName"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="@+id/displayName"
+        app:layout_constraintTop_toBottomOf="@+id/displayName" />
 
-    <EditText
-        android:id="@+id/personalDescription"
+    <TextView
+        android:id="@+id/displayWorkLocation"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="10dp"
-        android:ems="10"
-        android:hint="@string/personalDescription"
-        android:inputType="text"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:padding="2dp"
+        android:shadowColor="#B8A9A9"
+        android:text="@string/workLocation"
         android:textColor="#01080E"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/displayWorkPlace"
+        app:layout_constraintStart_toStartOf="@+id/displayWorkPlace"
+        app:layout_constraintTop_toBottomOf="@+id/displayWorkPlace" />
+
+    <TextView
+        android:id="@+id/displayWorkPlace"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:hint="@string/workPlace"
+        android:padding="5dp"
         android:textColorHint="#01080E"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/location"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toEndOf="@+id/displayName"
         app:layout_constraintStart_toStartOf="@+id/profilePicture"
-        app:layout_constraintTop_toBottomOf="@+id/displayProfession" />
+        app:layout_constraintTop_toBottomOf="@+id/displayRegistrationNumber" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

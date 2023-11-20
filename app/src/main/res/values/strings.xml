@@ -6,7 +6,7 @@
     <string name="profilePicture">profilePicture</string>
     <string name="location">location of operation</string>
     <string name="displayName">displayName</string>
-    <string name="workLocation">location</string>
+    <string name="workLocation">location (City, Country)</string>
     <string name="occupationalTherapists">OCCUPATIONAL THERAPISTS</string>
     <string name="logIn">LOG IN PAGE</string>
     <string name="enterYourEmail">Enter Your email</string>
@@ -52,4 +52,5 @@
     <string name="confirmPasswordNonMedicalPractitionerSignUp">Confirm Password</string>
     <string name="nonMedicalPractitionerSignUpNextButton">NEXT</string>
     <string name="nonMedicalPractitionerSignUpBackButton">BACK</string>
+    <string name="workPlace">Enter Your Work Place</string>
 </resources>

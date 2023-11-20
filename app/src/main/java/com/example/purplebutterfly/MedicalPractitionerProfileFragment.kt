@@ -13,10 +13,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [TherapistProfileFragment.newInstance] factory method to
+ * Use the [MedicalPractitionerProfileFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class TherapistProfileFragment : Fragment() {
+class MedicalPractitionerProfileFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -34,7 +34,7 @@ class TherapistProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_therapist_profile, container, false)
+        return inflater.inflate(R.layout.fragment_medical_practitioner_profile, container, false)
     }
 
     companion object {
@@ -49,7 +49,7 @@ class TherapistProfileFragment : Fragment() {
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            TherapistProfileFragment().apply {
+            MedicalPractitionerProfileFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

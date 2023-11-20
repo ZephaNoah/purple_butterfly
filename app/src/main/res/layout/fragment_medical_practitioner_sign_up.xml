@@ -144,7 +144,7 @@
                 app:drawableEndCompat="@android:drawable/btn_dropdown" />
 
             <TextView
-                android:id="@+id/enterRegistrationNumber"
+                android:id="@+id/displayProfessionTitle"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_marginStart="30dp"

@@ -63,4 +63,8 @@
     <string name="speechLanguageTherapist">SPEECH AND LANGUAGE THERAPISTS</string>
     <string name="organizations">ORGANIZATIONS</string>
     <string name="about">ABOUT US</string>
+    <string name="menuTab">MENU</string>
+    <string name="occupationalTherapistGroup">Group</string>
+    <string name="occupationalTherapistFrames">Frames</string>
+    <string name="occupationalTherapyFrames">Frames</string>
 </resources>

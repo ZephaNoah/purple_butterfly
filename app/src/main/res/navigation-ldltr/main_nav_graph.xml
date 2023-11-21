@@ -39,7 +39,20 @@
         android:id="@+id/landingPageFragment"
         android:name="com.example.purplebutterfly.LandingPageFragment"
         android:label="fragment_landing_page"
-        tools:layout="@layout/fragment_landing_page" />
+        tools:layout="@layout/fragment_landing_page" >
+        <action
+            android:id="@+id/action_landingPageFragment_to_occupationalTherapistFragment"
+            app:destination="@id/occupationalTherapistFragment" />
+        <action
+            android:id="@+id/action_landingPageFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_landingPageFragment_to_physiotherapistFragment"
+            app:destination="@id/physiotherapistFragment" />
+        <action
+            android:id="@+id/action_landingPageFragment_to_speechtherapistFragment"
+            app:destination="@id/speechtherapistFragment" />
+    </fragment>
     <fragment
         android:id="@+id/signUpOptionsFragment"
         android:name="com.example.purplebutterfly.SignUpOptionsFragment"
@@ -92,5 +105,24 @@
         android:id="@+id/medicalPractitionerProfileFragment2"
         android:name="com.example.purplebutterfly.MedicalPractitionerProfileFragment"
         android:label="fragment_medical_practitioner_profile"
-        tools:layout="@layout/fragment_medical_practitioner_profile" />
+        tools:layout="@layout/fragment_medical_practitioner_profile" >
+        <action
+            android:id="@+id/action_medicalPractitionerProfileFragment2_to_landingPageFragment"
+            app:destination="@id/landingPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.purplebutterfly.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/physiotherapistFragment"
+        android:name="com.example.purplebutterfly.PhysiotherapistFragment"
+        android:label="fragment_physiotherapist"
+        tools:layout="@layout/fragment_physiotherapist" />
+    <fragment
+        android:id="@+id/speechtherapistFragment"
+        android:name="com.example.purplebutterfly.SpeechtherapistFragment"
+        android:label="fragment_speechtherapist"
+        tools:layout="@layout/fragment_speechtherapist" />
 </navigation>

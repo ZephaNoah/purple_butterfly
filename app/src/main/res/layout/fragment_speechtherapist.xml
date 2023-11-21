@@ -11,25 +11,39 @@
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/nestedScrollViewSpeechTherapistProfile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tabLayout">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contextClickable="true"
+            android:icon="@drawable/baseline_menu_24"
+            android:text="@string/menuTab" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/chatTabSpeechTherapist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="false"
+            android:contextClickable="true"
+            android:focusable="auto"
+            android:focusableInTouchMode="true"
             android:text="@string/chatTab" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contextClickable="true"
             android:text="@string/SpeechTherapistGroup" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contextClickable="true"
             android:text="@string/frames" />
     </com.google.android.material.tabs.TabLayout>
 
@@ -39,73 +53,18 @@
         android:layout_height="1dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintGuide_begin="79dp"
+        app:layout_constraintGuide_begin="48dp"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/nestedScrollViewSpeechTherapistProfile"
+    <ListView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2">
-
-        <LinearLayout
-            android:id="@+id/linearLayOutSpeechTherapistProfile"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ListView
-                android:id="@+id/listView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:listitem="@layout/fragment_medical_practitioner_profile" />
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintGuide_begin="574dp"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/nextButtonSpeechTherapyPage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="10dp"
+        android:clickable="false"
         android:contextClickable="true"
-        android:text="@string/nextButtonSpeechTherapistProfile"
-        android:textColor="#01080E"
-        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nestedScrollViewSpeechTherapistProfile"
-        app:layout_constraintVertical_bias="0.486"
-        app:rippleColor="#01080E" />
-
-    <Button
-        android:id="@+id/backButtonSpeechTherapyPage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:contextClickable="true"
-        android:paddingLeft="2dp"
-        android:paddingRight="2dp"
-        android:text="@string/backButtonSpeechTherapistPage"
-        android:textColor="#01080E"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nestedScrollViewSpeechTherapistProfile" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        tools:listitem="@layout/fragment_medical_practitioner_profile" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

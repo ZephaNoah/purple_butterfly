@@ -58,4 +58,9 @@
     <string name="chatTab">Chat</string>
     <string name="SpeechTherapistGroup">Groups</string>
     <string name="frames">Frames</string>
+    <string name="OccupationalTherapists">OCCUPATIONAL THERAPISTS</string>
+    <string name="physiotherapists">PHYSIOTHERAPISTS</string>
+    <string name="speechLanguageTherapist">SPEECH AND LANGUAGE THERAPISTS</string>
+    <string name="organizations">ORGANIZATIONS</string>
+    <string name="about">ABOUT US</string>
 </resources>

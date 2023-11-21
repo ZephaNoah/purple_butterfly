@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav_graph"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/splashFragment"
+    tools:ignore="ExtraText">
 
     <fragment
         android:id="@+id/splashFragment"
@@ -58,7 +59,11 @@
         android:id="@+id/therapistSignUpFragment"
         android:name="com.example.purplebutterfly.MedicalPractitionerSignUpFragment"
         android:label="fragment_therapist_sign_up"
-        tools:layout="@layout/fragment_medical_practitioner_sign_up" />
+        tools:layout="@layout/fragment_medical_practitioner_sign_up" >
+        <action
+            android:id="@+id/action_therapistSignUpFragment_to_medicalPractitionerProfileFragment2"
+            app:destination="@id/medicalPractitionerProfileFragment2" />
+    </fragment>
     <fragment
         android:id="@+id/nonMedicalPractitionerSignUpFragment"
         android:name="com.example.purplebutterfly.NonMedicalPractitionerSignUpFragment"
@@ -78,4 +83,14 @@
             android:id="@+id/action_organizationSignUpFragment_to_organisationProfileFragment"
             app:destination="@id/organisationProfileFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/occupationalTherapistFragment"
+        android:name="com.example.purplebutterfly.OccupationalTherapistFragment"
+        android:label="OccupationalTherapistFragment" />
+        tools:layout="@layout/fragment_occupational_therapist" />
+    <fragment
+        android:id="@+id/medicalPractitionerProfileFragment2"
+        android:name="com.example.purplebutterfly.MedicalPractitionerProfileFragment"
+        android:label="fragment_medical_practitioner_profile"
+        tools:layout="@layout/fragment_medical_practitioner_profile" />
 </navigation>
